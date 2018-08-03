@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+  <title>Library</title>
+</head>
+<body>
+<header><h1>My Library</h1></header>
+  <table id="myTable">
+    <tr>
+      <th>Id</th>
+      <th>Book Name</th>
+      <th>Author</th>
+      <th>Pages</th>
+      <th>Have_Read</th>
+      <th>Delete_Book</th>
+      <th>Date Added</th>
+    </tr>
+  </table>
+  <form action="">
+    <fieldset>
+      <legend>Book Upload:</legend>
+      Book Title:<br/><input type="text" id="title"required><br/>
+      Author:<br/><input type="text" id="author"required><br/>
+      Pages:<br/><input type="number" id="pages"required><br/>
+      Have Read?: 
+        <input type="radio" id="yes" name="reader-selection">
+        <label for="X">Yes</label>
+        <input type="radio" id="no" name="reader-selection" checked>
+        <label for="O">No</label>
+      <div id="button-container"><button id="submit">Add To Library</button></div>
+    </fieldset>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
